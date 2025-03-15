@@ -1,0 +1,199 @@
+/* Estilos generales */
+:root {
+    --primary-color: #1e40af;
+    --primary-dark: #1e3a8a;
+    --secondary-color: #475569;
+    --light-bg: #f3f4f6;
+    --white: #ffffff;
+    --dark: #1f2937;
+    --text-color: #374151;
+    --text-light: #6b7280;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  body {
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 2rem 0;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    color: #d1d5db;
+  }
+  
+  /* Main content */
+  main {
+    padding: 2rem 0;
+  }
+  
+  .course-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .course-layout {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+  
+  /* Secciones del curso */
+  .course-section {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+  }
+  
+  .section-header {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9fafb;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .section-header:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .section-header span:last-child {
+    color: var(--text-light);
+    font-size: 1.25rem;
+  }
+  
+  .section-content {
+    padding: 1rem 1.5rem;
+  }
+  
+  .section-content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  .section-content li {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    position: sticky;
+    top: 1.5rem;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .info-block {
+    margin-bottom: 1rem;
+  }
+  
+  .info-block h3 {
+    font-weight: 500;
+    color: var(--dark);
+  }
+  
+  .info-block p {
+    color: var(--text-light);
+  }
+  
+  /* Botón */
+  .enroll-button {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: center;
+  }
+  
+  .enroll-button:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+  
+  /* Animaciones */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .animate-fade {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Código de ensamblador (para ejemplos) */
+  pre {
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-left: 3px solid var(--primary-color);
+  }
+  
+  code {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    background-color: #f1f5f9;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+  }
