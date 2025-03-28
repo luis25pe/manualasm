@@ -10,9 +10,20 @@
     --text-light: #6b7280;
   }
   
+  .header-content {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+  }
+  
+  .header-image {
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+  }
   * {
     margin: 0;
     padding: 0;
+    font-size: 20px;
     box-sizing: border-box;
     font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
   }
@@ -63,7 +74,62 @@
       grid-template-columns: 2fr 1fr;
     }
   }
-  
+  /* Estilo base para los botones */
+button {
+  background-color: #007fb9; /* Color de fondo */
+  color: rgb(0, 0, 0); /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque en línea */
+  font-size: 20px; /* Tamaño de la fuente */
+  margin: 4px 2px; /* Margen exterior */
+  cursor: pointer; /* Cursor tipo puntero */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover para los botones */
+button:hover {
+  background-color: #008CBA; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilo para el botón de navegación */
+.navigate-button {
+  background-color: #008CBA; /* Color de fondo azul */
+  margin-top: 10px; /* Margen superior */
+}
+
+.navigate-button:hover {
+  background-color: #007B9E; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilo para los botones de las secciones */
+.section-header {
+  background-color: #555; /* Color de fondo oscuro */
+  width: 100%; /* Ancho completo */
+  text-align: left; /* Alineación del texto a la izquierda */
+  padding: 15px; /* Espaciado interno */
+  font-size: 18px; /* Tamaño de la fuente */
+  border-radius: 5px; /* Bordes redondeados */
+  display: flex; /* Flexbox para alinear contenido */
+  justify-content: space-between; /* Espacio entre elementos */
+  align-items: center; /* Alineación vertical */
+}
+
+.section-header:hover {
+  background-color: #666; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilo para el contenido de las secciones */
+.section-content {
+  background-color: #f9f9f9; /* Color de fondo claro */
+  padding: 15px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-top: 10px; /* Margen superior */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
   /* Secciones del curso */
   .course-section {
     background-color: var(--white);
@@ -78,7 +144,7 @@
     padding: 1rem 1.5rem;
     text-align: left;
     font-weight: 600;
-    font-size: 1.125rem;
+    font-size: 1.525rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
