@@ -255,3 +255,56 @@ padding: 20px;
 border-radius: 8px;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* =========================
+   Responsive (móvil/tablet)
+   ========================= */
+
+@media (max-width: 768px) {
+  .intro-nasm {
+    padding: 12px;
+  }
+
+  /* Pasa a 1 columna */
+  .main-content-wrapper {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Sidebar full width y ya no sticky */
+  .sidebar-nasm {
+    flex: 1 1 auto;
+    width: 100%;
+    position: static;
+    top: auto;
+  }
+
+  /* Contenido full width */
+  .content-main,
+  .content-container {
+    width: 100%;
+  }
+
+  /* Quita límites que aprietan en móvil */
+  .intro-nasm-section {
+    max-width: none;
+    margin: 12px 0;
+    padding: 14px;
+  }
+
+  /* Si hay contenedores lado a lado (NASM/GCC), apílalos */
+  .main-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Imágenes sin ancho fijo */
+  .intro-nasm-images {
+    flex: 1 1 auto;
+  }
+
+  /* Evita overflow horizontal por bloques de código */
+  pre {
+    overflow-x: auto;
+  }
+}
